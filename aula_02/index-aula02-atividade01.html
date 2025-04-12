@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Currículo">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: rgb(6, 95, 61);
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        
+        p {
+            color: rgb(141, 83, 13);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        h2 {
+            color: rgb(224, 117, 16);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .caixa {
+            background-color: white;
+            border: 3px dashed coral;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        img.w300 {
+            width: 300px;
+        }
+        img.h800{
+            height: 800px;  
+        }
+        .w800_redonda {
+            clip-path: circle(50%);
+        }
+        figure {
+            margin-left: 0px;
+            margin-top: 20px;
+            width: 100%;
+            border: 0px dotted chocolate;
+        }
+    </style>
+</head>
+<body>
+
+    
+<!--Elemento HEADER-->
+<header>
+    <h1>Aula 02 - Imagens - Parte 01</h1>
+     
+</header>
+
+<!--Elemento MAIN - Área principal da página-->
+<main>
+    <section id="section1">
+        <h2>Seção 1: Introdução</h2>
+
+        <p>Esta é a primeira seção da página. Informações introdutórias.</p>
+        <div class="caixa">
+            Venham ver este pássaro belíssimo!
+        </div>
+    </section>
+        
+    <section id="section1">
+        <h1>Imagem Original</h1>
+        <img src="codigo/img/bird-8450958_1920.png"
+            alt="Pássaro"
+            width="800px">
+    </section>
+    
+    <section id="section2">
+        <h1>Imagem com 300px de largura</h1>
+        <img src="codigo/img/bird-8450958_1920.png"
+            alt="Pássaro"
+            class="w300">
+    </section>
+
+    <figure>
+            <img src="codigo/img/bird-8450958_1920.png"
+            alt="Pássaro"
+            class="h800">
+        <figcaption>
+            Pássaro - Imagem Original
+        </figcaption>
+    </figure>
+
+    <figure>
+        <img src="codigo/img/bird-8450958_1920.png"
+            alt="Pássaro"
+            class="w800_redonda"
+        />
+        <figcaption>
+            Pássaro - Imagem Arredondada
+        </figcaption>
+    </figure>
+
+</main>
+
+ <!-- Elemento FOOTER - Roda-pé da página --> 
+ <footer id="footer">
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+</footer>
+</body>
+
+
+
+</html>
